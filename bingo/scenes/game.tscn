@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cggfb4nafd7nw"]
+
+[ext_resource type="PackedScene" uid="uid://c0r2oxh4ghbhp" path="res://scenes/bingo_card.tscn" id="1_jy6ax"]
+
+[node name="Game" type="Node2D"]
+
+[node name="BingoCard" parent="." instance=ExtResource("1_jy6ax")]

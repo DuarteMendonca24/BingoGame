@@ -1,0 +1,127 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0r2oxh4ghbhp"]
+
+[ext_resource type="Script" path="res://scripts/bingo_card.gd" id="1_150xh"]
+
+[node name="BingoCard" type="Node2D"]
+script = ExtResource("1_150xh")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_direction = 2
+offset_right = 40.0
+offset_bottom = 50.0
+columns = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GridContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="GridContainer/VBoxContainer"]
+layout_mode = 2
+text = "B"
+
+[node name="Label2" type="Label" parent="GridContainer/VBoxContainer"]
+layout_mode = 2
+text = "1"
+
+[node name="Label3" type="Label" parent="GridContainer/VBoxContainer"]
+layout_mode = 2
+text = "1"
+
+[node name="Label4" type="Label" parent="GridContainer/VBoxContainer"]
+layout_mode = 2
+text = "1"
+
+[node name="Label5" type="Label" parent="GridContainer/VBoxContainer"]
+layout_mode = 2
+text = "1"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="GridContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="GridContainer/VBoxContainer2"]
+layout_mode = 2
+text = "I"
+
+[node name="Label2" type="Label" parent="GridContainer/VBoxContainer2"]
+layout_mode = 2
+text = "1"
+
+[node name="Label3" type="Label" parent="GridContainer/VBoxContainer2"]
+layout_mode = 2
+text = "1"
+
+[node name="Label4" type="Label" parent="GridContainer/VBoxContainer2"]
+layout_mode = 2
+text = "1"
+
+[node name="Label5" type="Label" parent="GridContainer/VBoxContainer2"]
+layout_mode = 2
+text = "1"
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="GridContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="GridContainer/VBoxContainer3"]
+layout_mode = 2
+text = "N"
+
+[node name="Label2" type="Label" parent="GridContainer/VBoxContainer3"]
+layout_mode = 2
+text = "1"
+
+[node name="Label3" type="Label" parent="GridContainer/VBoxContainer3"]
+layout_mode = 2
+text = "1"
+
+[node name="Label4" type="Label" parent="GridContainer/VBoxContainer3"]
+layout_mode = 2
+text = "1"
+
+[node name="Label5" type="Label" parent="GridContainer/VBoxContainer3"]
+layout_mode = 2
+text = "1"
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="GridContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="GridContainer/VBoxContainer4"]
+layout_mode = 2
+text = "G"
+
+[node name="Label2" type="Label" parent="GridContainer/VBoxContainer4"]
+layout_mode = 2
+text = "1"
+
+[node name="Label3" type="Label" parent="GridContainer/VBoxContainer4"]
+layout_mode = 2
+text = "1"
+
+[node name="Label4" type="Label" parent="GridContainer/VBoxContainer4"]
+layout_mode = 2
+text = "1"
+
+[node name="Label5" type="Label" parent="GridContainer/VBoxContainer4"]
+layout_mode = 2
+text = "1"
+
+[node name="VBoxContainer5" type="VBoxContainer" parent="GridContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="GridContainer/VBoxContainer5"]
+layout_mode = 2
+text = "O"
+
+[node name="Label2" type="Label" parent="GridContainer/VBoxContainer5"]
+layout_mode = 2
+text = "1"
+
+[node name="Label3" type="Label" parent="GridContainer/VBoxContainer5"]
+layout_mode = 2
+text = "1"
+
+[node name="Label4" type="Label" parent="GridContainer/VBoxContainer5"]
+layout_mode = 2
+text = "1"
+
+[node name="Label5" type="Label" parent="GridContainer/VBoxContainer5"]
+layout_mode = 2
+text = "1"
