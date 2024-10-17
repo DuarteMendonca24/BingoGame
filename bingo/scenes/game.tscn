@@ -1,7 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://cggfb4nafd7nw"]
+[gd_scene load_steps=3 format=3 uid="uid://cggfb4nafd7nw"]
 
 [ext_resource type="PackedScene" uid="uid://c0r2oxh4ghbhp" path="res://scenes/bingo_card.tscn" id="1_jy6ax"]
+[ext_resource type="PackedScene" uid="uid://ciihpk3u04qu8" path="res://scenes/number_caller.tscn" id="2_immcc"]
 
 [node name="Game" type="Node2D"]
 
 [node name="BingoCard" parent="." instance=ExtResource("1_jy6ax")]
+
+[node name="NumberCaller" parent="." instance=ExtResource("2_immcc")]
+position = Vector2(231, 55)
