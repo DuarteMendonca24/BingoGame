@@ -6,9 +6,9 @@ var card := []
 var number_called := 0
 
 func _ready() -> void:
-	card = bingo_card.final_card
-	print(card)
-	pass
+	card = bingo_card.card
+	print("game manager",card)
+	
 
 
 func _on_number_caller_number_called(number) -> void:
@@ -18,9 +18,10 @@ func _on_number_caller_number_called(number) -> void:
 	
 
 func search_card():
-	if(card.has(number_called)):
-		var index = card.find(number_called)
-		card[index] = "X"
-		bingo_card.display_card(card)
-		print(card)
-		print("number found")
+	for row in card:
+		if(row.has(number_called)):
+			var index = row.find(number_called)
+			row[index] = "X"
+			bingo_card.display_card(card)
+			print(card)	
+			print("number found")
