@@ -28,7 +28,7 @@ func _ready() -> void:
 	
 
 
-func random_row(min,max):
+func random_row(min: int,max: int):
 	var row_array = []
 	var random_number = 0
 	while row_array.size() < 5:
