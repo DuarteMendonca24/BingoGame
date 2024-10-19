@@ -24,7 +24,7 @@ func _ready() -> void:
 		print(card_dict[key])
 	final_card = bingo_card()
 	print(final_card)
-	display_card()
+	display_card(final_card)
 	
 
 
@@ -45,8 +45,8 @@ func bingo_card():
 			final_array.append(card_dict[key][i])  # Add the element to final array
 	return final_array
 	
-func display_card():
+func display_card(card:Array):
 	# Ensure both the labels and final_card numbers are aligned by using a single loop
 	var labels = bingo_grid.get_children()  # Get all the labels in the grid container
 	for i in range(labels.size()):  # Assuming the number of labels matches the final_card
-		labels[i].text = str(final_card[i])  # Set each label's text to the corresponding number
+		labels[i].text = str(card[i])  # Set each label's text to the corresponding number

@@ -19,4 +19,8 @@ func _on_number_caller_number_called(number) -> void:
 
 func search_card():
 	if(card.has(number_called)):
+		var index = card.find(number_called)
+		card[index] = "X"
+		bingo_card.display_card(card)
+		print(card)
 		print("number found")
