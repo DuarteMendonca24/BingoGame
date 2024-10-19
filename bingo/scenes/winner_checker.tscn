@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://gmhp1d1apowb"]
+
+[ext_resource type="Script" path="res://scripts/winner_checker.gd" id="1_2l6wl"]
+
+[node name="WinnerChecker" type="Node2D"]
+script = ExtResource("1_2l6wl")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0

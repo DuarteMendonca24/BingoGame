@@ -43,7 +43,7 @@ func bingo_card(card:Array):
 	for i in range(5):
 	# Loop through each key in the dictionary (B, I, N, G, O)
 		for key in ["B", "I", "N", "G", "O"]:
-			card[i].append(column_dict[key][i])
+			card[i].append(str(column_dict[key][i]))
 			#print("card test",card)
 	card[2][2] = "X"
 	
