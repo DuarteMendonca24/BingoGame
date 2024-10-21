@@ -1,15 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://ciihpk3u04qu8"]
+[gd_scene load_steps=3 format=3 uid="uid://ciihpk3u04qu8"]
 
 [ext_resource type="Script" path="res://scripts/number_caller.gd" id="1_ol7kj"]
+[ext_resource type="Texture2D" uid="uid://wcil677ibury" path="res://textures/BingoBallsTube/BingoBallsTube.png" id="2_o0ew4"]
 
 [node name="NumberCaller" type="Node2D"]
 script = ExtResource("1_ol7kj")
 
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.519802, 0.519802)
+texture = ExtResource("2_o0ew4")
+
+[node name="Label" type="Label" parent="Sprite2D"]
+offset_left = -275.105
+offset_right = -235.105
+offset_bottom = 23.0
+
 [node name="Timer" type="Timer" parent="."]
 autostart = true
-
-[node name="Label" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

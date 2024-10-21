@@ -9,13 +9,15 @@
 script = ExtResource("1_qhaas")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(21, -12)
 
 [node name="BingoCard" parent="." instance=ExtResource("1_jy6ax")]
-position = Vector2(10, 31)
+position = Vector2(-98, 107)
 
 [node name="NumberCaller" parent="." instance=ExtResource("2_immcc")]
-position = Vector2(231, 55)
+position = Vector2(-730, -484)
 
 [node name="WinnerChecker" parent="." instance=ExtResource("4_cbhgu")]
+position = Vector2(609, 352)
 
 [connection signal="number_called" from="NumberCaller" to="." method="_on_number_caller_number_called"]

@@ -7,7 +7,8 @@
 script = ExtResource("1_150xh")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.75897, 0.75897)
+position = Vector2(108.975, -92.0632)
+scale = Vector2(0.558833, 0.558833)
 texture = ExtResource("2_g0w55")
 
 [node name="BingoGrid" type="GridContainer" parent="Sprite2D"]
