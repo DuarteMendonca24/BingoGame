@@ -1,7 +1,7 @@
 extends Node2D
 
 var rng = RandomNumberGenerator.new()
-@onready var bingo_grid: GridContainer = $BingoGrid
+@onready var bingo_grid: GridContainer = $Sprite2D/BingoGrid
 
 var  column_dict = {
 	"B": [],

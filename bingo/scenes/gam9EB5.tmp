@@ -8,10 +8,8 @@
 [node name="Game" type="Node2D"]
 script = ExtResource("1_qhaas")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-
 [node name="BingoCard" parent="." instance=ExtResource("1_jy6ax")]
-position = Vector2(10, 31)
+position = Vector2(540, 364)
 
 [node name="NumberCaller" parent="." instance=ExtResource("2_immcc")]
 position = Vector2(231, 55)
