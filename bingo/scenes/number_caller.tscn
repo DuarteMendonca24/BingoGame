@@ -7,6 +7,7 @@
 script = ExtResource("1_ol7kj")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.5708
 scale = Vector2(0.519802, 0.519802)
 texture = ExtResource("2_o0ew4")
 
@@ -16,6 +17,7 @@ offset_right = -235.105
 offset_bottom = 23.0
 
 [node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
 autostart = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

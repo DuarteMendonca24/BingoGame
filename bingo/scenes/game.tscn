@@ -12,10 +12,10 @@ script = ExtResource("1_qhaas")
 position = Vector2(21, -12)
 
 [node name="BingoCard" parent="." instance=ExtResource("1_jy6ax")]
-position = Vector2(-98, 107)
+position = Vector2(-101, 110)
 
 [node name="NumberCaller" parent="." instance=ExtResource("2_immcc")]
-position = Vector2(-730, -484)
+position = Vector2(-730, -327)
 
 [node name="WinnerChecker" parent="." instance=ExtResource("4_cbhgu")]
 position = Vector2(609, 352)
