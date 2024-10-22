@@ -7,14 +7,32 @@
 script = ExtResource("1_ol7kj")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-rotation = 1.5708
-scale = Vector2(0.519802, 0.519802)
+scale = Vector2(0.533243, 0.519802)
 texture = ExtResource("2_o0ew4")
 
-[node name="Label" type="Label" parent="Sprite2D"]
-offset_left = -275.105
-offset_right = -235.105
-offset_bottom = 23.0
+[node name="Position1" type="Marker2D" parent="Sprite2D"]
+position = Vector2(-268.108, 0)
+scale = Vector2(0.334225, 0.342867)
+
+[node name="Position2" type="Marker2D" parent="Sprite2D"]
+position = Vector2(-131.21, 0)
+scale = Vector2(0.201107, 0.206307)
+
+[node name="Position3" type="Marker2D" parent="Sprite2D"]
+position = Vector2(-22.4411, 1.92381)
+scale = Vector2(0.201107, 0.206307)
+
+[node name="Position4" type="Marker2D" parent="Sprite2D"]
+position = Vector2(86.3272, 1.92381)
+scale = Vector2(0.201107, 0.206307)
+
+[node name="Position5" type="Marker2D" parent="Sprite2D"]
+position = Vector2(195.096, 1.92381)
+scale = Vector2(0.201107, 0.206307)
+
+[node name="Position6" type="Marker2D" parent="Sprite2D"]
+position = Vector2(303.864, 1.92381)
+scale = Vector2(0.201107, 0.206307)
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0
