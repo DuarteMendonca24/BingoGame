@@ -1,6 +1,6 @@
 extends Node2D
 
-
+signal ball_collision
 
 @export  var ball_sprite: Sprite2D
 @export var letter_text: Label
@@ -37,4 +37,4 @@ func setText(number)->void:
 
 
 func _on_rigid_body_2d_body_entered(body: Node) -> void:
-	pass # Replace with function body.
+	ball_collision.emit()

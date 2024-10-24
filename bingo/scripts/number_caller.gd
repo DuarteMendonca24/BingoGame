@@ -42,9 +42,9 @@ func ball_instantiate(random_number) -> void:
 	ball.position = positions[0]
 	balls_instantiaed.append(ball)
 	
-	if(balls_instantiaed.size() > 3):
-		balls_instantiaed[0].queue_free()
-		balls_instantiaed.remove_at(0)
+	ball.connect("ball_collision",_on_ball_collision)
+	
+	
 	
 	
 	# Now, push all other balls to the next position (back to front)
@@ -54,7 +54,11 @@ func ball_instantiate(random_number) -> void:
 	#print("Ball positions:", balls_instantiaed.map(func(ball): return ball.position))
 
 
-
+func _on_ball_collision():
+	print("NUmber CALler ball collision")
+	if(balls_instantiaed.size() > 3):
+		balls_instantiaed[0].queue_free()
+		balls_instantiaed.remove_at(0)
 
 
 
