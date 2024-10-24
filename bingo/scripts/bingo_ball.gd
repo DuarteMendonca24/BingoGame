@@ -1,5 +1,7 @@
 extends Node2D
 
+
+
 @export  var ball_sprite: Sprite2D
 @export var letter_text: Label
 @export  var number_text: Label 
@@ -31,3 +33,8 @@ func setText(number)->void:
 	letter_text.text = letter
 	number_text.text = str(number)
 	ball_sprite.texture = ball_sprite_dict[letter]
+	
+
+
+func _on_rigid_body_2d_body_entered(body: Node) -> void:
+	pass # Replace with function body.
