@@ -1,38 +1,27 @@
-[gd_scene load_steps=3 format=3 uid="uid://ciihpk3u04qu8"]
+[gd_scene load_steps=4 format=3 uid="uid://ciihpk3u04qu8"]
 
 [ext_resource type="Script" path="res://scripts/number_caller.gd" id="1_ol7kj"]
 [ext_resource type="Texture2D" uid="uid://bg25nyy7s8hxl" path="res://textures/BingoBallsTube/BingoBallsTube.png" id="2_o0ew4"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x2kal"]
+size = Vector2(258, 38)
+
 [node name="NumberCaller" type="Node2D"]
 script = ExtResource("1_ol7kj")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="TubeSprite" type="Sprite2D" parent="."]
 scale = Vector2(0.533243, 0.519802)
 texture = ExtResource("2_o0ew4")
 
-[node name="Position1" type="Marker2D" parent="Sprite2D"]
+[node name="SpawnMarker" type="Marker2D" parent="TubeSprite"]
 position = Vector2(-3.75064, -255.867)
 scale = Vector2(0.334225, 0.342867)
 
-[node name="Position2" type="Marker2D" parent="Sprite2D"]
-position = Vector2(-131.21, 0)
-scale = Vector2(0.201107, 0.206307)
+[node name="CollisionLimit" type="StaticBody2D" parent="."]
+position = Vector2(0, 215)
 
-[node name="Position3" type="Marker2D" parent="Sprite2D"]
-position = Vector2(-22.4411, 1.92381)
-scale = Vector2(0.201107, 0.206307)
-
-[node name="Position4" type="Marker2D" parent="Sprite2D"]
-position = Vector2(86.3272, 1.92381)
-scale = Vector2(0.201107, 0.206307)
-
-[node name="Position5" type="Marker2D" parent="Sprite2D"]
-position = Vector2(195.096, 1.92381)
-scale = Vector2(0.201107, 0.206307)
-
-[node name="Position6" type="Marker2D" parent="Sprite2D"]
-position = Vector2(303.864, 1.92381)
-scale = Vector2(0.201107, 0.206307)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionLimit"]
+shape = SubResource("RectangleShape2D_x2kal")
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0

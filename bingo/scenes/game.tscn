@@ -1,13 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://cggfb4nafd7nw"]
+[gd_scene load_steps=6 format=3 uid="uid://cggfb4nafd7nw"]
 
 [ext_resource type="PackedScene" uid="uid://c0r2oxh4ghbhp" path="res://scenes/bingo_card.tscn" id="1_jy6ax"]
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_qhaas"]
 [ext_resource type="PackedScene" uid="uid://ciihpk3u04qu8" path="res://scenes/number_caller.tscn" id="2_immcc"]
 [ext_resource type="PackedScene" uid="uid://gmhp1d1apowb" path="res://scenes/winner_checker.tscn" id="4_cbhgu"]
 [ext_resource type="Texture2D" uid="uid://dpt1cx7rqim0r" path="res://textures/Background/background_3.jpg" id="5_bllls"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_gxyqv"]
-size = Vector2(258, 38)
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_qhaas")
@@ -24,14 +21,7 @@ position = Vector2(-873, -49)
 [node name="WinnerChecker" parent="." instance=ExtResource("4_cbhgu")]
 position = Vector2(609, 352)
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(-794, 549)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-18, -380)
-shape = SubResource("RectangleShape2D_gxyqv")
-
-[node name="Background" type="Sprite2D" parent="."]
+[node name="BackgroundSprite" type="Sprite2D" parent="."]
 z_index = -1
 position = Vector2(23, 94)
 texture = ExtResource("5_bllls")

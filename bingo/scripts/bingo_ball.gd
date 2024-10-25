@@ -6,6 +6,7 @@ signal ball_collision
 @export var letter_text: Label
 @export  var number_text: Label 
 
+# Dictionary that loads bingo ball textures based on the letter
 var ball_sprite_dict = {
 	"B": preload("res://textures/BingoBalls/BBall.png"),
 	"I": preload("res://textures/BingoBalls/IBall.png"),
@@ -13,8 +14,9 @@ var ball_sprite_dict = {
 	"G": preload("res://textures/BingoBalls/GBall.png"),
 	"O": preload("res://textures/BingoBalls/OBall.png")
 }
-	
-func setText(number)->void:
+
+# Function to set bingo ball properties like text and texture
+func set_ball_properties(number: int)->void:
 	
 	var letter: String
 	
@@ -29,12 +31,11 @@ func setText(number)->void:
 	elif number >= 61 and number <= 75:
 		letter = "O"
 	
-	print("Letter",letter)
 	letter_text.text = letter
 	number_text.text = str(number)
 	ball_sprite.texture = ball_sprite_dict[letter]
 	
 
-
+# Function to detect collision and emit a signal to number_caller script
 func _on_rigid_body_2d_body_entered(body: Node) -> void:
 	ball_collision.emit()

@@ -1,8 +1,9 @@
 extends Node2D
 
+@onready var bingo_grid: GridContainer = $CardSprite/BingoGrid
 var rng = RandomNumberGenerator.new()
-@onready var bingo_grid: GridContainer = $Sprite2D/BingoGrid
 
+# Dictionary that holds the random columns
 var  column_dict = {
 	"B": [],
 	"I": [],
@@ -11,6 +12,7 @@ var  column_dict = {
 	"O": [],
 }
 
+# Array to hold the bingo card numbers organized
 var card = [
 	[],
 	[],
@@ -19,44 +21,44 @@ var card = [
 	[]
 ]
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	
 	column_dict["B"] = random_column(1,15)
 	column_dict["I"] = random_column(16,30)
 	column_dict["N"] = random_column(31,45)
 	column_dict["G"] = random_column(46,60)
 	column_dict["O"] = random_column(61,75)
-
+	
 	bingo_card(card)
 	display_card(card)
 
+# Function that generates random columns based on given numbers
 func random_column(min: int,max: int):
-	var row_array = []
-	var random_number = 0
+	var row_array: Array
+	var random_number: int
 	while row_array.size() < 5:
 		random_number = rng.randi_range(min,max)
 		if(!row_array.has(random_number)):
 			row_array.append(random_number)
 	return row_array
-	
-func bingo_card(card:Array):
+
+# Function that fills a bingo card array with numbers from the column dictionary in order
+func bingo_card(card: Array):
 	for i in range(5):
-	# Loop through each key in the dictionary (B, I, N, G, O)
 		for key in ["B", "I", "N", "G", "O"]:
 			card[i].append(str(column_dict[key][i]))
-			#print("card test",card)
 	card[2][2] = "X"
-	
-func display_card(card: Array):
-	var labels = bingo_grid.get_children()  # Get all the labels in the grid container
-	var label_index = 0  # Track the current label index
 
-	# Loop through the 2D array (column-major order) to display the numbers
-	for row in range(5):  # Iterate over columns B, I, N, G, O
-		for column in range(5):  # Iterate over each row in the column
-			if label_index < labels.size():  # Ensure we don't exceed the number of labels
-				labels[label_index].text = str(card[row][column])  # Set the label's text to the corresponding number
-				label_index += 1  # Move to the next label
+# Function to display the bingo card numbers into the scene
+func display_card(card: Array) -> void:
+	var labels:= bingo_grid.get_children() 
+	var label_index:= 0	
+
+	for row in range(5):
+		for column in range(5): 
+			if label_index < labels.size():
+				labels[label_index].text = str(card[row][column]) 
+				label_index += 1  
 			else:
-				print("Warning: More labels needed in the grid!")
-				return  # Exit if we exceed the number of labels
+				print("Warning: Not enough labels!")
+				return

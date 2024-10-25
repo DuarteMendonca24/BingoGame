@@ -6,199 +6,249 @@
 [node name="BingoCard" type="Node2D"]
 script = ExtResource("1_150xh")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="CardSprite" type="Sprite2D" parent="."]
 position = Vector2(108.975, -92.0632)
 scale = Vector2(0.558833, 0.558833)
 texture = ExtResource("2_g0w55")
 
-[node name="BingoGrid" type="GridContainer" parent="Sprite2D"]
+[node name="BingoGrid" type="GridContainer" parent="CardSprite"]
 layout_direction = 2
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -1038.5
-offset_top = -785.0
-offset_right = -50.5
-offset_bottom = -65.0
+offset_left = -1027.6
+offset_top = -762.303
+offset_right = -40.605
+offset_bottom = -42.3029
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/h_separation = 93
+theme_override_constants/h_separation = 88
 theme_override_constants/v_separation = -5
 columns = 5
 
-[node name="Label" type="Label" parent="Sprite2D/BingoGrid"]
+[node name="Label" type="Label" parent="CardSprite/BingoGrid"]
 modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(123, 148)
 layout_mode = 2
 theme_override_font_sizes/font_size = 108
 text = "77"
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label2" type="Label" parent="Sprite2D/BingoGrid"]
+[node name="Label2" type="Label" parent="CardSprite/BingoGrid"]
 modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(123, 148)
 layout_mode = 2
 theme_override_font_sizes/font_size = 108
 text = "77"
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label3" type="Label" parent="Sprite2D/BingoGrid"]
+[node name="Label3" type="Label" parent="CardSprite/BingoGrid"]
 modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(123, 148)
 layout_mode = 2
 theme_override_font_sizes/font_size = 108
 text = "77"
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label4" type="Label" parent="Sprite2D/BingoGrid"]
+[node name="Label4" type="Label" parent="CardSprite/BingoGrid"]
 modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(123, 148)
 layout_mode = 2
 theme_override_font_sizes/font_size = 108
 text = "77"
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label5" type="Label" parent="Sprite2D/BingoGrid"]
+[node name="Label5" type="Label" parent="CardSprite/BingoGrid"]
 modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(123, 148)
 layout_mode = 2
 theme_override_font_sizes/font_size = 108
 text = "77"
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label6" type="Label" parent="Sprite2D/BingoGrid"]
+[node name="Label6" type="Label" parent="CardSprite/BingoGrid"]
 modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(123, 148)
 layout_mode = 2
 theme_override_font_sizes/font_size = 108
 text = "77"
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label7" type="Label" parent="Sprite2D/BingoGrid"]
+[node name="Label7" type="Label" parent="CardSprite/BingoGrid"]
 modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(123, 148)
 layout_mode = 2
 theme_override_font_sizes/font_size = 108
 text = "77"
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label8" type="Label" parent="Sprite2D/BingoGrid"]
+[node name="Label8" type="Label" parent="CardSprite/BingoGrid"]
 modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(123, 148)
 layout_mode = 2
 theme_override_font_sizes/font_size = 108
 text = "77"
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label9" type="Label" parent="Sprite2D/BingoGrid"]
+[node name="Label9" type="Label" parent="CardSprite/BingoGrid"]
 modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(123, 148)
 layout_mode = 2
 theme_override_font_sizes/font_size = 108
 text = "77"
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label10" type="Label" parent="Sprite2D/BingoGrid"]
+[node name="Label10" type="Label" parent="CardSprite/BingoGrid"]
 modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(123, 148)
 layout_mode = 2
 theme_override_font_sizes/font_size = 108
 text = "77"
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label11" type="Label" parent="Sprite2D/BingoGrid"]
+[node name="Label11" type="Label" parent="CardSprite/BingoGrid"]
 modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(123, 148)
 layout_mode = 2
 theme_override_font_sizes/font_size = 108
 text = "77"
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label12" type="Label" parent="Sprite2D/BingoGrid"]
+[node name="Label12" type="Label" parent="CardSprite/BingoGrid"]
 modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(123, 148)
 layout_mode = 2
 theme_override_font_sizes/font_size = 108
 text = "77"
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label13" type="Label" parent="Sprite2D/BingoGrid"]
+[node name="Label13" type="Label" parent="CardSprite/BingoGrid"]
 modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(123, 148)
 layout_mode = 2
 theme_override_font_sizes/font_size = 108
 text = "77"
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label14" type="Label" parent="Sprite2D/BingoGrid"]
+[node name="Label14" type="Label" parent="CardSprite/BingoGrid"]
 modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(123, 148)
 layout_mode = 2
 theme_override_font_sizes/font_size = 108
 text = "77"
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label15" type="Label" parent="Sprite2D/BingoGrid"]
+[node name="Label15" type="Label" parent="CardSprite/BingoGrid"]
 modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(123, 148)
 layout_mode = 2
 theme_override_font_sizes/font_size = 108
 text = "77"
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label16" type="Label" parent="Sprite2D/BingoGrid"]
+[node name="Label16" type="Label" parent="CardSprite/BingoGrid"]
 modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(123, 148)
 layout_mode = 2
 theme_override_font_sizes/font_size = 108
 text = "77"
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label17" type="Label" parent="Sprite2D/BingoGrid"]
+[node name="Label17" type="Label" parent="CardSprite/BingoGrid"]
 modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(123, 148)
 layout_mode = 2
 theme_override_font_sizes/font_size = 108
 text = "77"
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label18" type="Label" parent="Sprite2D/BingoGrid"]
+[node name="Label18" type="Label" parent="CardSprite/BingoGrid"]
 modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(123, 148)
 layout_mode = 2
 theme_override_font_sizes/font_size = 108
 text = "77"
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label19" type="Label" parent="Sprite2D/BingoGrid"]
+[node name="Label19" type="Label" parent="CardSprite/BingoGrid"]
 modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(123, 148)
 layout_mode = 2
 theme_override_font_sizes/font_size = 108
 text = "77"
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label20" type="Label" parent="Sprite2D/BingoGrid"]
+[node name="Label20" type="Label" parent="CardSprite/BingoGrid"]
 modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(123, 148)
 layout_mode = 2
 theme_override_font_sizes/font_size = 108
 text = "77"
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label21" type="Label" parent="Sprite2D/BingoGrid"]
+[node name="Label21" type="Label" parent="CardSprite/BingoGrid"]
 modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(123, 148)
 layout_mode = 2
 theme_override_font_sizes/font_size = 108
 text = "77"
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label22" type="Label" parent="Sprite2D/BingoGrid"]
+[node name="Label22" type="Label" parent="CardSprite/BingoGrid"]
 modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(123, 148)
 layout_mode = 2
 theme_override_font_sizes/font_size = 108
 text = "77"
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label23" type="Label" parent="Sprite2D/BingoGrid"]
+[node name="Label23" type="Label" parent="CardSprite/BingoGrid"]
 modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(123, 148)
 layout_mode = 2
 theme_override_font_sizes/font_size = 108
 text = "77"
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label24" type="Label" parent="Sprite2D/BingoGrid"]
+[node name="Label24" type="Label" parent="CardSprite/BingoGrid"]
 modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(123, 148)
 layout_mode = 2
 theme_override_font_sizes/font_size = 108
 text = "77"
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label25" type="Label" parent="Sprite2D/BingoGrid"]
+[node name="Label25" type="Label" parent="CardSprite/BingoGrid"]
 modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(123, 148)
 layout_mode = 2
 theme_override_font_sizes/font_size = 108
 text = "77"
 horizontal_alignment = 1
+vertical_alignment = 1
